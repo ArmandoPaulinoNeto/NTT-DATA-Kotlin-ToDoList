@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/drawable/ic_add.xml" value="0.2203125" />
+        <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/layout/activite_add_task.xml" value="0.25" />
         <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
       </map>
     </option>

@@ -2,4 +2,7 @@
     <string name="app_name">To do List</string>
     <string name="main_title">Tarefas de hoje</string>
     <string name="add_task">Adicionar</string>
+    <string name="save_task">Salvar</string>
+    <string name="cancel_task">Cancelar</string>
+    <string name="menu_task">Criar tarefas</string>
 </resources>
