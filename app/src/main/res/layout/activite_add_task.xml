@@ -31,7 +31,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_title"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Título"
+        android:hint="@string/lable_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -47,7 +47,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_date"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Data"
+        android:hint="@string/lable_data"
         app:startIconDrawable="@drawable/ic_calendar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_hour"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Hora"
+        android:hint="@string/lable_hour"
         app:startIconDrawable="@drawable/ic_watch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_save_task"
         style="@style/Widget.MaterialComponents.Button"
-        android:text="@string/save_task"
+        android:text="@string/lable_save"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -95,7 +95,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_cancel_task"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:text="@string/cancel_task"
+        android:text="@string/lable_cancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
