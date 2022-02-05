@@ -8,4 +8,6 @@
     <string name="lable_hour">Hora</string>
     <string name="lable_title">Título</string>
     <string name="lable_data">Data</string>
+    <string name="lable_description_add_task">Criar uma nova tarefa</string>
+    <string name="lable_r_task">Título tarefa</string>
 </resources>

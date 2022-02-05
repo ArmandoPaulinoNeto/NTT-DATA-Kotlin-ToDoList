@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txt_Tittle"
+        android:id="@+id/text_Tittle"
         android:text="@string/main_title"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -19,10 +19,22 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_task"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="8"
+        tools:listitem="@layout/item_task"
+        app:layout_constraintBottom_toTopOf="@id/button_add_task"
+        app:layout_constraintTop_toBottomOf="@id/text_Tittle" >
 
-    <Button
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_add_task"
         android:text="@string/add_task"
+        android:contentDescription="@string/lable_description_add_task"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:backgroundTint="@color/teal_700"
