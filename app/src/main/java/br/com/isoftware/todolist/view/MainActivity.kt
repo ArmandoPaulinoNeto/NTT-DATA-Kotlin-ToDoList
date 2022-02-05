@@ -1,4 +1,4 @@
-package br.com.isoftware.todolist
+package br.com.isoftware.todolist.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

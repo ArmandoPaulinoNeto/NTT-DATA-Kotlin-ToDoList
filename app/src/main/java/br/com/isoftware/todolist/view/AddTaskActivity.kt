@@ -1,8 +1,7 @@
-package br.com.isoftware.todolist
+package br.com.isoftware.todolist.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import br.com.isoftware.todolist.databinding.ActiviteAddTaskBinding
 import br.com.isoftware.todolist.extansions.format
