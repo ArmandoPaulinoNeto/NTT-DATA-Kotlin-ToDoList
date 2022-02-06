@@ -17,7 +17,7 @@
         android:text="@string/lable_empty_view_task"
         android:textColor="@color/black"
         android:gravity="center"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageview_empty_state"

@@ -10,18 +10,20 @@
     <TextView
         android:id="@+id/text_Tittle"
         android:text="@string/main_title"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
     <include
         android:id="@+id/include_empty"
         layout="@layout/empty_view_task" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_task"
         android:layout_width="match_parent"
@@ -34,6 +36,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_Tittle"
         tools:visibility="gone" >
     </androidx.recyclerview.widget.RecyclerView>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_add_task"
         android:text="@string/add_task"
@@ -46,4 +49,5 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         app:layout_constraintBottom_toBottomOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
