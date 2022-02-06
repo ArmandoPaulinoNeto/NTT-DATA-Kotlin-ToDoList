@@ -12,4 +12,5 @@
     <string name="lable_r_task">Título tarefa</string>
     <string name="lable_item_edit">Editar</string>
     <string name="lable_item_delete">Deletar</string>
+    <string name="lable_empty_view_task">Ops! Voçê não possui nenhuma tarefa agendada.</string>
 </resources>

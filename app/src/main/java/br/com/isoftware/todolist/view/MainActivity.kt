@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AlertDialog
 import br.com.isoftware.todolist.databinding.ActivityMainBinding
 import br.com.isoftware.todolist.repository.TaskBank
@@ -46,7 +47,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showList(){
-        adapter.submitList(TaskBank.selectAll())
+        val taskAll = TaskBank.selectAll()
+        binding.includeEmpty.emptyViewState.visibility = if(taskAll.isEmpty()) View.VISIBLE else View.GONE
+        adapter.submitList(taskAll)
     }
 
     companion object{

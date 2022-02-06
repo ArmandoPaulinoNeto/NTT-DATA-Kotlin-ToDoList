@@ -4,8 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/drawable/ic_add.xml" value="0.2203125" />
+        <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/drawable/ic_navigate_before_24.xml" value="0.2203125" />
+        <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/drawable/ic_ociosidade.xml" value="0.1" />
+        <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/drawable/ic_task.xml" value="0.2203125" />
+        <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/drawable/ic_watch.xml" value="0.2203125" />
         <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/layout/activite_add_task.xml" value="0.25" />
         <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/layout/empty_wiew.xml" value="0.20416666666666666" />
         <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/layout/item_task.xml" value="0.20416666666666666" />
         <entry key="..\:/IDEs/AndroidStudioProjects/TodoList/app/src/main/res/menu/popup_menu.xml" value="0.20416666666666666" />
       </map>
