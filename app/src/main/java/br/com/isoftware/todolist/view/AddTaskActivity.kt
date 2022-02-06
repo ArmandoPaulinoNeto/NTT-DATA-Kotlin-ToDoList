@@ -20,8 +20,19 @@ class AddTaskActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActiviteAddTaskBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        if(intent.hasExtra(TASK_ID)){
+            val taskId = intent.getIntExtra(TASK_ID, 0)
+            TaskBank.selectId(taskId)?.let {
+                binding.textTitle.text = it.title
+                binding.textDate.text = it.date
+                binding.textHour.text = it.hour
+            }
+        }
+
         insertListners()
     }
 
@@ -52,14 +63,14 @@ class AddTaskActivity : AppCompatActivity() {
         binding.buttonSaveTask.setOnClickListener {
             if (binding.textTitle.text.isNotEmpty()
                 && binding.textDate.text.isNotEmpty()
-                && binding.textHour.text.isNotEmpty()
-            ) {
-
-                val task =
-                    Task(binding.textTitle.text, binding.textDate.text, binding.textHour.text)
+                && binding.textHour.text.isNotEmpty())
+            {
+                val task = Task(binding.textTitle.text,
+                    binding.textDate.text,
+                    binding.textHour.text,
+                    intent.getIntExtra(TASK_ID,0))
                 TaskBank.insertTask(task)
-                alert("Salvo!", ("Terefa agendada com sucesso!")).show()
-                setResult(RESULT_OK)
+                setResult(Activity.RESULT_OK)
                 finish()
             } else {
                 alert("Campos vazios!", ("Por favor preencha os campos corretamente.")).show()
@@ -71,5 +82,8 @@ class AddTaskActivity : AppCompatActivity() {
             .setTitle(title)
             .setMessage(message)
             .setPositiveButton("Fechar", null)
+    }
+    companion object{
+        const val TASK_ID = "TASK_ID"
     }
 }

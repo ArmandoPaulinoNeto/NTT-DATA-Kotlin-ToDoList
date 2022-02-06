@@ -7,12 +7,18 @@ object TaskBank{
     private val dataBase = arrayListOf<Task>()
 
     fun insertTask(task: Task) {
-        dataBase.add(task.copy(id = dataBase.size+1))
+        if(task.id == 0){
+            dataBase.add(task.copy(id = dataBase.size+1))
+        }else{
+            dataBase.remove(task)
+            dataBase.add(task)
+        }
     }
+    fun selectAll() = dataBase.toList()
+
+    fun selectId(id: Int) = dataBase.find{ it.id == id }
+
     fun deleteTask(task: Task) {
         dataBase.remove(task)
     }
-    fun selectAll() = dataBase
-
-    fun selectId(id: Int) = dataBase.find{ it.id == id }
 }
